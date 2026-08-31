@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unbox Your Account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="kicker">
+    <div class="eyebrow">Curated · Boxed · Delivered</div>
+    <h1>Unbox your account</h1>
+    <p>Everything you love, packed into one box.</p>
+  </div>
+
+  <div class="stage" id="stage" data-mode="login">
+    <div class="box-shell" id="boxShell">
+
+      <div class="flap flap-top">
+        <div class="tile"><svg viewBox="0 0 24 24"><path d="M8 3 3 6l2 4 2-1v11h10V9l2 1 2-4-5-3-2 2h-2z"/></svg><span>Clothes</span></div>
+        <div class="tile"><svg viewBox="0 0 24 24"><rect x="1.5" y="9" width="3" height="6" rx="1"/><rect x="19.5" y="9" width="3" height="6" rx="1"/><line x1="4.5" y1="12" x2="19.5" y2="12"/><rect x="4.5" y="7.5" width="2.5" height="9" rx="1"/><rect x="17" y="7.5" width="2.5" height="9" rx="1"/></svg><span>Gym</span></div>
+      </div>
+
+      <div class="seam" id="seam">
+        <div class="tape tape-left" id="tapeLeft"></div>
+        <div class="tape tape-right" id="tapeRight"></div>
+        <div class="seam-label">Fragile · This side up</div>
+      </div>
+
+      <div class="flap flap-bottom">
+        <div class="tile"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0"/><rect x="2" y="12" width="4" height="7" rx="1.6"/><rect x="18" y="12" width="4" height="7" rx="1.6"/></svg><span>Music</span></div>
+        <div class="tile"><svg viewBox="0 0 24 24"><path d="M4 4h7v16H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M20 4h-7v16h7a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/></svg><span>Books</span></div>
+      </div>
+
+      <svg class="scissors" id="scissors" viewBox="0 0 56 56">
+        <circle class="pin" cx="28" cy="28" r="2.4"/>
+        <g class="blade-a">
+          <path d="M28 28 8 10"/>
+          <circle cx="8" cy="10" r="4.4"/>
+        </g>
+        <g class="blade-b">
+          <path d="M28 28 8 46"/>
+          <circle cx="8" cy="46" r="4.4"/>
+        </g>
+        <path d="M28 28 50 28"/>
+        <path d="M42 22 50 28 42 34"/>
+      </svg>
+
+      <div class="form-panel" id="formPanel">
+        <button class="close-btn" id="closeBtn" aria-label="Close">×</button>
+        <div class="eyebrow-tag" id="formEyebrow">Packing slip</div>
+        <h2 id="formTitle">Welcome back</h2>
+        <p class="sub" id="formSub">Log in to open today's box.</p>
+        <form id="theForm">
+          <label>Email
+            <input type="email" required placeholder="you@example.com">
+          </label>
+          <label>Password
+            <input type="password" required placeholder="••••••••">
+          </label>
+          <div class="field-wrap" id="confirmWrap">
+            <label>Confirm password
+              <input type="password" id="confirmInput" placeholder="••••••••">
+            </label>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">Log in →</button>
+        </form>
+        <p class="switch-mode">
+          <span id="switchText">New here?</span>
+          <a id="switchLink">Create an account</a>
+        </p>
+        <p class="confirm-msg" id="confirmMsg" hidden>✂ Box opened — you're in.</p>
+      </div>
+
+    </div>
+
+    <div class="cta-row" id="ctaRow">
+      <button class="stamp-btn stamp-login" id="btnLogin">Log in</button>
+      <button class="stamp-btn stamp-signup" id="btnSignup">Create account</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
